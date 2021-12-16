@@ -1,4 +1,5 @@
 // constants
+import { v4 as uuid } from "uuid";
 export const actionConstants = {
   ADD_TODO: "ADD_TODO",
   REMOVE_TODO_ITEM: "REMOVE_TODO_ITEM",
@@ -13,7 +14,7 @@ export const addTodo = ({ title, status, id }) => {
     payload: {
       title,
       status,
-      id
+      id: uuid()
     }
   };
 };
