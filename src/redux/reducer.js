@@ -1,9 +1,10 @@
+import { uuid } from "uuidv4";
 import { actionConstants } from "./actions";
-
+// import {v4 as uuid} from "uuid"
 const initState = {
   todos: [
     {
-      id: 1,
+      id: uuid(),
       status: true,
       title: "BUY BREAD"
     }
